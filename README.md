@@ -1,7 +1,10 @@
+I know the layout for this readme isn't great I am sorry
+
 Should work but will be changing some code in the near future.
 file to run is ImageManipulation.py
 
 HOW TO USE
+
 1.On running a file explorer will be opened please select the image you want analysed 
 
 2.The image will be displayed for you to crop
