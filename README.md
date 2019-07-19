@@ -1,5 +1,7 @@
 I know the layout for this readme isn't great I am sorry
 
+Dont think you have to clone the whole directory a lot of the files are auto created by pycharm (might be wrong) the main stuff is just the .py files but if you just get them then you will need to install all the packages
+
 Should work but will be changing some code in the near future.
 file to run is ImageManipulation.py
 
