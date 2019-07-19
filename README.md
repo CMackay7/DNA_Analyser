@@ -3,6 +3,7 @@ file to run is ImageManipulation.py
 
 HOW TO USE
 1.On running a file explorer will be opened please select the image you want analysed 
+
 2.The image will be displayed for you to crop
 
   a.Crop the image getting as much noise out of the image as you can (please crop out sides of gel etc) (to crop just draw a rectangle,
@@ -36,8 +37,10 @@ HOW TO USE
   b. press any key to exit
   
 7. The image will be displayed again press any key to continue
+
 8.Type the what you want the file to be called
 
 GO INTO filewriter.py IN ORDER TO CHANGE FILE PATH 
+
 9.The program will finish and the file will contain the cell breakdown
   
