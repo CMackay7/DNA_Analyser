@@ -4,7 +4,8 @@ import os.path
 root = Tk()
 
 filename = "untitled.txt"
-filepath = "C:/Users/camer/Desktop/Christie Data"
+#CHANGE THIS
+filepath = "C:"
 
 
 def write_to_file(lines):
