@@ -4,7 +4,7 @@ import os.path
 root = Tk()
 
 filename = "untitled.txt"
-#CHANGE THIS
+# CHANGE THIS TO SPECIFY WHERE FILE GOES
 filepath = "C:"
 
 
@@ -22,6 +22,8 @@ def write_to_file(lines):
 def construct_file(lines):
     onelane = []
     breaknames = ["open circular", "linear", "supercoiled"]
+
+    # Construct file
     for i in range(len(lines)):
 
         onelane.append("DNA damage breakdown for lane " + str(i) + "\n")
@@ -33,6 +35,7 @@ def construct_file(lines):
     return onelane
 
 
+# Using Tkinter to get the file name from the user
 def get_input():
     textBox = Entry(root, width=10)
     textBox.pack()
