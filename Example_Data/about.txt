@@ -1,0 +1,35 @@
+These folders contain the agarose electrophoresis for plasmids that were irradiated
+at Dalton Cumbrian Facility with protons.
+
+Each folder contains an "about.txt" file, which specifies what each lane in the gel
+corresponds to. The plasmid DNA was irradiated for 3 energies at multiple doses under various
+conditions. Each folder contains many images of the same gel, at different exposures. For each
+exposure there is also a "blank" image, to subtract from the gel image.
+For each energy at each dose we have 3 repeats as well as "sham irradiations"
+Sham irradiations undergo the full experiment but receive no dose, these are used as our 0Gy or controls.
+
+The plasmid is usually under supercoiled conformation. A single strand break causes it to relax
+into its open circular form. A double strand break causes the coiled plasmid to open up into
+linear DNA.
+Under electrophoresis these conformations form 3 distinct bands in the gel.
+From left to right these bands are:
+1) open circular (OC)
+2) linear (L)
+3) supercoiled (SC)
+The proportion of signal between the 3 bands is used to calculate the types of DNA damage.
+
+
+TYPICAL ANALYSIS
+1) Subtract the blank image from the gel image (removes background signal)
+2) Generate a line profile along a lane (should see 3 distinct peaks, occasionally the supercoiled
+   peak may overlap with the open circular)
+3) Remove background signal from the line profile (sample the gel image outside of the lanes to get an
+   average background)
+4) Normalise the signal so that the maximum peak is equal to 1 and get the signal values
+   for OC, L, SC
+5) Turn the normalised signal into a proportion of total signal, e.g.
+   OC_Proportion = OC / (OC+L+SC)
+   L_Proportion = L / (OC+L+SC)
+   SC_Proportion = SC / (OC+L+SC)
+6) Repeat the process for the 2 other repeats at this dose for this energy
+7) Average the plasmid form proportions for the 3 repeats

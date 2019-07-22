@@ -1,0 +1,30 @@
+Wet samples irradiated at DCF
+See "21/6/19" page in lab book
+irradiated with varying dose of 6, 7, 8 MeV Protons
+
+Lane  SampleNum Info
+1 SC  -
+2 2Log  -
+3 EcoR1 -
+4 Control Frozen and transported but not dried on slide
+5 1 5Gy 8MeV
+6 4 0Gy 8MeV (Sham)
+7 5 10Gy 8MeV
+8 9  20Gy 8MeV
+9 13  30Gy 8MeV
+10  17  40Gy 8MeV
+11  21  50Gy 8MeV
+12  25  5Gy 7MeV
+13  28  0Gy 7MeV (Sham)
+14  29  10Gy 7MeV
+15  33  20Gy 7MeV
+16  37  30Gy 7MeV
+17  41  40Gy 7MeV
+18  45  50Gy 7MeV
+19  49  5Gy 6MeV
+20  52  0Gy 6MeV
+21  53  10Gy 6MeV
+22  57  20Gy 6MeV
+23  61  30Gy 6MeV
+24  65  40Gy 6MeV
+25  69  50Gy 6MeV
