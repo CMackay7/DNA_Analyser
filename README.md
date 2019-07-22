@@ -32,9 +32,11 @@ HOW TO USE
   
 6. The lines will be shown again
 
+    - Press "e" to raw new lines on the image
+
     - click hold and draw in order to draw new lines between the dna points (please draw from first to last with one line)
   
-    - press any key to exit
+    - press "q" to exit
   
 7. The image will be displayed again press any key to continue
 
