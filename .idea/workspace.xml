@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8040aa55-7530-4ed7-96fa-014d2730a028" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ImageManipulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageManipulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,25 +67,27 @@
         <counts>
           <entry key="Python Console" value="37" />
           <entry key="dummy" value="12" />
-          <entry key="py" value="28125" />
+          <entry key="md" value="44" />
+          <entry key="py" value="28184" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="Markdown" value="44" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Python" value="28162" />
+          <entry key="Python" value="28221" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageManipulation.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="74" column="23" lean-forward="true" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+            <state relative-caret-position="340">
+              <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
               <folding>
                 <element signature="e#166#189#0" expanded="true" />
               </folding>
@@ -117,12 +119,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-289">
-                <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+              <first_editor relative-caret-position="697">
+                <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
               </first_editor>
               <second_editor />
             </state>
@@ -205,6 +207,7 @@
         <option value="$PROJECT_DIR$/ClickHandler.py" />
         <option value="$PROJECT_DIR$/FileWriter.py" />
         <option value="$PROJECT_DIR$/ImageManipulation.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -416,13 +419,13 @@
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17762661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17762661" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4989339" weight="0.32891247" />
-      <window_info active="true" anchor="bottom" x="1247" y="-612" width="169" height="103" id="Run" order="3" sideWeight="0.81130064" visible="true" weight="0.2082228" />
+      <window_info anchor="bottom" x="1247" y="-612" width="169" height="103" id="Run" order="3" sideWeight="0.81130064" visible="true" weight="0.2082228" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.54850745" weight="0.32493368" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -635,16 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-289">
-            <caret line="7" column="10" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FileWriter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -670,11 +663,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageManipulation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="74" column="23" lean-forward="true" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="23" />
+        <state relative-caret-position="340">
+          <caret line="74" column="55" selection-start-line="74" selection-start-column="55" selection-end-line="74" selection-end-column="55" />
           <folding>
             <element signature="e#166#189#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="697">
+            <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
