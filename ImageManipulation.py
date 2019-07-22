@@ -71,7 +71,11 @@ def curr_main():
     # cv2.destroyAllWindows()
     lined_image = draw_lanes(final_centroids, grey_image.copy())
     cv2.imshow('addLines', lined_image)
-    final_centroids = UserInputHandler.add_points_for_line(grouped_centroids, grey_image.copy())
+
+    # Allow them to press "e" if they want to add lines
+    key = cv2.waitKey(0)
+    if key == ord("e"):
+        final_centroids = UserInputHandler.add_points_for_line(grouped_centroids, grey_image.copy())
     # final_centroids = Edditor.let_them_edit(grouped_centroids, foruseing)
 
     ImageAnalyser.get_intensity(standard_image, final_centroids)
