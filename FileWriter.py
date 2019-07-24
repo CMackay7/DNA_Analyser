@@ -5,7 +5,7 @@ root = Tk()
 
 filename = "untitled.txt"
 # CHANGE THIS TO SPECIFY WHERE FILE GOES
-filepath = "C:"
+filepath = "C:/Users/camer/Desktop/Christie Data/"
 
 
 def write_to_file(lines):
