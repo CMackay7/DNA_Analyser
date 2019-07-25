@@ -8,6 +8,7 @@ import cv2
 # When using write (cv2.setMouseCallback("IMAGE_NAME", cropper.click_and_crop)) and whenever they click the image
 # it will call either standard_click or click_and_crop
 
+
 # To get the position of the clicks call get and it will return the points
 class ClickHandler:
     clickActions = Queue()
