@@ -24,9 +24,7 @@ def find_and_delete_centroids(centroids, click_pos):
     for curr_point in centroids:
         if (click_pos[1] + 5) > curr_point[1] > (click_pos[1] - 5) and (click_pos[0] + 5) > curr_point[0] > \
                 (click_pos[0] - 5):
-            print(centroids)
             del centroids[x]
-            print(centroids)
             return centroids
         x = x + 1
     return centroids

@@ -1,6 +1,8 @@
 from tkinter import *
 import os.path
 
+# This file just saves the file with the data in
+
 root = Tk()
 
 filename = "untitled.txt"

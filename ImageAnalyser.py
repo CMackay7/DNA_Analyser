@@ -24,7 +24,6 @@ def get_intensity(image, centroids):
     cv2.waitKey(0)
     single_row_intensities = []
     all_intensities = []
-    _, width, _ = image.shape
 
     for point in centroids:
         lengthofcent = len(point)
