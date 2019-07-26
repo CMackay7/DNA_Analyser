@@ -32,10 +32,12 @@ def check_drop(points, current_point, drop_start, op):
         return check_drop(points, next_point, drop_start, op)
 
 
+# If the drop is over 30% then it will mark as an edge, i did this so a small drop on the peak
+# will not be falsely classed as an edge.
 def decrease(original, new):
     decrease = original - new
     percentage_change = (decrease / original) * 100
-    if percentage_change > 30:
+    if percentage_change > 40:
         return True
     else:
         return False
