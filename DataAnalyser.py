@@ -11,11 +11,11 @@ def some_testing(data):
     simple_graphing(data, splits)
     get_areas(datas)
 
-    # split_into_sections takes the data and will call go_along_data in GraphAnalysis and will find the first middle
-    # and last
-    # peak in the data. It passes back the position of the cuts and the cuts as they are both need at some point
-    # Will be cleaned up more at a later date
 
+    # split_into_sections takes the data and will call go_along_data in GraphAnalysis and will find the first middle
+    # and last peak in the data.
+    # It passes back the position of the cuts and the cuts as they are both need at some point
+    # Will be cleaned up more at a later date
 
 def split_into_sections(data):
     toadd = []
@@ -93,9 +93,9 @@ def normalise_values(data):
     for values in data:
         toadd = []
         total = sum(values)
-        toadd.append(round((values[0] / total)*100, 2))
-        toadd.append(round((values[1] / total)*100, 2))
-        toadd.append(round((values[2] / total)*100, 2))
+        toadd.append(round((values[0] / total) * 100, 2))
+        toadd.append(round((values[1] / total) * 100, 2))
+        toadd.append(round((values[2] / total) * 100, 2))
         normalised_values.append(toadd[:])
         toadd.clear()
 

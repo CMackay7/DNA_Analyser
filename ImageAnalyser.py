@@ -51,7 +51,7 @@ def get_intensity(image, centroids):
         all_intensities.append(single_row_intensities[:])
         single_row_intensities.clear()
     tosend = decrease_values(all_intensities)
-    DataAnalyser.some_testing(tosend, centroids, image, spacings, list_of_dna)
+    DataAnalyser.some_testing(tosend)
 
 
 # Sorts centroids
