@@ -6,9 +6,8 @@ import cv2
 from tkinter import *
 import GraphAnalysis
 import statistics
-
-
-root = Tk()
+from tkinter.messagebox import askokcancel
+# = Tk()
 
 
 # Get intensity is passed the image and the lines. It will run along the pixels in each line and get the intensity
@@ -51,6 +50,7 @@ def get_intensity(image, centroids):
         all_intensities.append(single_row_intensities[:])
         single_row_intensities.clear()
     tosend = decrease_values(all_intensities)
+    cv2.destroyAllWindows()
     DataAnalyser.some_testing(tosend)
 
 

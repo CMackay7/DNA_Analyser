@@ -1,9 +1,8 @@
-from tkinter import *
+# from tkinter import *
 from tkinter.filedialog import asksaveasfilename
 
 # This file just saves the file with the data in
 
-root = Tk()
 
 filename = "untitled.txt"
 # CHANGE THIS TO SPECIFY WHERE FILE GOES
@@ -36,8 +35,3 @@ def construct_file(lines):
 
     return onelane
 
-
-def retrieve_input(textBox):
-    global filename
-    filename = (textBox.get() + ".txt")
-    root.quit()
