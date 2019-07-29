@@ -4,7 +4,7 @@ from tkinter.filedialog import askopenfilename
 import Edditor
 import ImageManipulation
 
-
+#test for gitignore
 # This method is where all current code should go to get inputs from the user
 # Select image opens a file explorer using tkinter and returns the file path.
 
@@ -16,6 +16,7 @@ import ImageManipulation
 
 def select_image():
     filename = askopenfilename()
+    print()
     return filename
 
 
