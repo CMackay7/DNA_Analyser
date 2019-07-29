@@ -165,11 +165,9 @@ def get_drop_off(centroids, image):
             count += 1
             list_of_intent.append(intent)
 
-        avg_int += total_int
         total_int = 0
         final_list.append(list_of_intent[:])
         list_of_intent.clear()
-    avg_int = avg_int/count
 
     return final_list
 

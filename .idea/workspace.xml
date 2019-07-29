@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8040aa55-7530-4ed7-96fa-014d2730a028" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DataAnalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataAnalyser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileWriter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ImageAnalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/ImageAnalyser.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ChristieWork$ImageManipulation.coverage" NAME="ImageManipulation Coverage Results" MODIFIED="1564410522865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ChristieWork$ImageManipulation.coverage" NAME="ImageManipulation Coverage Results" MODIFIED="1564414083858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ChristieWork$TestingCode.coverage" NAME="TestingCode Coverage Results" MODIFIED="1564057193359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ChristieWork$ImageAnalyser.coverage" NAME="ImageAnalyser Coverage Results" MODIFIED="1564061464607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ChristieWork$UserInputHandler.coverage" NAME="UserInputHandler Coverage Results" MODIFIED="1563272313554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -75,7 +73,7 @@
           <entry key="Python Console" value="37" />
           <entry key="dummy" value="17" />
           <entry key="md" value="212" />
-          <entry key="py" value="38747" />
+          <entry key="py" value="38748" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
@@ -83,7 +81,7 @@
         <counts>
           <entry key="Markdown" value="212" />
           <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="38784" />
+          <entry key="Python" value="38785" />
         </counts>
       </usages-collector>
     </session>
@@ -93,10 +91,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ImageAnalyser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+            <state relative-caret-position="-1269">
+              <caret line="165" column="41" lean-forward="true" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
               <folding>
-                <marker date="1564410933437" expanded="true" signature="9172:9173" ph="..." />
+                <element signature="e#151#170#0" expanded="true" />
+                <marker date="1564414067229" expanded="true" signature="9115:9116" ph="..." />
               </folding>
             </state>
           </provider>
@@ -425,7 +424,7 @@
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="0" weight="0.329718" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" sideWeight="0.4989339" weight="0.3286334" />
-      <window_info active="true" anchor="bottom" x="1247" y="-612" width="169" height="103" id="Run" order="3" sideWeight="0.81130064" visible="true" weight="0.20715836" />
+      <window_info anchor="bottom" x="1247" y="-612" width="169" height="103" id="Run" order="3" sideWeight="0.81130064" visible="true" weight="0.20715836" />
       <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.54850745" weight="0.30368763" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -440,7 +439,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.3432836" />
+      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.3432836" />
       <window_info anchor="right" id="Database" order="4" weight="0.32942432" />
     </layout>
     <layout-to-restore>
@@ -732,10 +731,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageAnalyser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        <state relative-caret-position="-1269">
+          <caret line="165" column="41" lean-forward="true" selection-start-line="165" selection-start-column="41" selection-end-line="165" selection-end-column="41" />
           <folding>
-            <marker date="1564410933437" expanded="true" signature="9172:9173" ph="..." />
+            <element signature="e#151#170#0" expanded="true" />
+            <marker date="1564414067229" expanded="true" signature="9115:9116" ph="..." />
           </folding>
         </state>
       </provider>
