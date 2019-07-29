@@ -4,16 +4,10 @@ from tkinter.filedialog import asksaveasfilename
 # This file just saves the file with the data in
 
 
-filename = "untitled.txt"
-# CHANGE THIS TO SPECIFY WHERE FILE GOES
-filepath = "C:/Users/camer/Desktop/Christie Data/"
-
-
 def write_to_file(lines):
-    global filename
     whattowrite = construct_file(lines)
-    fileypath = asksaveasfilename()
-    completefile = fileypath + ".txt"
+    filepath = asksaveasfilename()
+    completefile = filepath + ".txt"
     filetowrite = open(completefile, "w+")
 
     for line in whattowrite:
@@ -34,4 +28,3 @@ def construct_file(lines):
         onelane.append("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + "\n")
 
     return onelane
-

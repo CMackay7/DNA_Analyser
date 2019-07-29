@@ -3,11 +3,8 @@
 import DataAnalyser
 import ImageManipulation
 import cv2
-from tkinter import *
 import GraphAnalysis
 import statistics
-from tkinter.messagebox import askokcancel
-# = Tk()
 
 
 # Get intensity is passed the image and the lines. It will run along the pixels in each line and get the intensity
