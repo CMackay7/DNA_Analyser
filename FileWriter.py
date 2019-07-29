@@ -1,5 +1,5 @@
 from tkinter import *
-import os.path
+from tkinter.filedialog import asksaveasfilename
 
 # This file just saves the file with the data in
 
@@ -13,8 +13,8 @@ filepath = "C:/Users/camer/Desktop/Christie Data/"
 def write_to_file(lines):
     global filename
     whattowrite = construct_file(lines)
-    get_input()
-    completefile = os.path.join(filepath, filename)
+    fileypath = asksaveasfilename()
+    completefile = fileypath + ".txt"
     filetowrite = open(completefile, "w+")
 
     for line in whattowrite:
@@ -35,18 +35,6 @@ def construct_file(lines):
         onelane.append("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + "\n")
 
     return onelane
-
-
-# Using Tkinter to get the file name from the user
-def get_input():
-    textBox = Entry(root, width=10)
-    textBox.pack()
-    buttonCommit = Button(root, height=1, width=10, text="Commit",
-                          command=lambda: retrieve_input(textBox))
-    # command=lambda: retrieve_input() >>> just means do this when i press the button
-    buttonCommit.pack()
-
-    mainloop()
 
 
 def retrieve_input(textBox):
