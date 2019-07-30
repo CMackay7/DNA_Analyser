@@ -1,7 +1,10 @@
 import operator
 import GraphAnalysis
 import FileWriter
+import matplotlib
+matplotlib.use("TKAgg")
 import matplotlib.pyplot as plt
+
 import numpy as np
 from numpy import trapz
 
@@ -69,7 +72,7 @@ def simple_graphing(data, centroidedges):
         plt.axvline(x=centroidedges[i][0])
         plt.axvline(x=centroidedges[i][1])
         plt.axvline(x=len(data[i]) - 1)
-        plt.show()
+        #plt.show()
         plt.close(fig)
 
         # Uncomment this so show graphs

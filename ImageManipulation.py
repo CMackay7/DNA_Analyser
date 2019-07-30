@@ -2,10 +2,12 @@ import UserInputHandler
 import cv2
 import ImageAnalyser
 
+
 # This function will probably get changes to make it more more precise
 # Currently reads in an image crops it then turns it into a binary image in order to find the contours
 def curr_main():
     while True:
+
         BaseImageDirec = UserInputHandler.select_image()
         # Need to read load in multiple copies of the same image, some of the operations done on images need to be done
         # on gray scale images some need to be in colour so need to read the same image in multiple ways
@@ -25,7 +27,7 @@ def curr_main():
         standard_image = standard_image[point1[1]:point2[1], point1[0]:point2[0]]
         grey_image = grey_image[point1[1]:point2[1], point1[0]:point2[0]]
 
-        cv2.imshow('cropped', grey_image)
+        cv2.imshow('cropped', grey_image.copy())
         cv2.waitKey(0)
         cv2.destroyAllWindows()
 
@@ -41,7 +43,8 @@ def curr_main():
         drawn_centroids = draw_centroids(centroids, binary_image.copy())
 
         # Display to user
-        cv2.imshow('centroids_plotted', drawn_centroids)
+
+        cv2.imshow('centroids_plotted', (drawn_centroids.copy()))
         key = cv2.waitKey(0)
 
         # Allow users to edit the centroids
@@ -63,7 +66,7 @@ def curr_main():
 
         # cv2.destroyAllWindows()
         lined_image = draw_lanes(final_centroids, grey_image.copy())
-        cv2.imshow('addLines', lined_image)
+        cv2.imshow('addLines', (lined_image))
 
         # Allow them to press "e" if they want to add lines
         key = cv2.waitKey(0)
@@ -129,6 +132,13 @@ def find_centroids(image):
             centroids.append((int(round(m['m10'] / m['m00'])), int(round(m['m01'] / m['m00']))))
 
     return centroids
+
+
+def add_borders(image):
+    top, bottom, left, right = 0, 0, 40, 40
+    bordered = cv2.copyMakeBorder(image, top, bottom, left, right, cv2.BORDER_CONSTANT,
+                                  value=[128,128,128])
+    return bordered
 
 
 if __name__ == '__main__':

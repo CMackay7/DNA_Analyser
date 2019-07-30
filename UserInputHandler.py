@@ -50,8 +50,9 @@ def crop_image(image_copy):
         point1, point2 = check_crop_points(point1, point2)
 
         # Display the area the user has chosen to crop to see if they are alright with this
-        cv2.rectangle(image_to_edit, point1, point2, (0, 255, 0), 2)
-        cv2.imshow("image_to_crop", image_to_edit)
+        imagetouse = image_to_edit #ImageManipulation.add_borders(image_to_edit)
+        cv2.rectangle(imagetouse, point1, point2, (0, 255, 0), 2)
+        cv2.imshow("image_to_crop", imagetouse)
 
         stay_in_loop = True
         while stay_in_loop:

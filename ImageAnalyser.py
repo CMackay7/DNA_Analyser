@@ -151,7 +151,6 @@ def decrease_values(data):
 # dna needs to be calculated it makes it easier to tell based of intensity when a pixed that is not on the dna
 # spot has been hit.
 def get_drop_off(centroids, image):
-    avg_int = 0
     count = 0
     total_int = 0
     final_list = []
@@ -198,7 +197,10 @@ def find_vertical_edges(centroids, image, listint):
                 if intent < (currintent - currintent * 0.15):
                     bottom = changer
                     is_hit = True
+                    #image = cv2.circle(image, (point[0], point[1] - changer), 1, (255, 0, 255))
+
                     changer = 0
+
             is_hit = False
 
             # Do the same again but going up in the image
@@ -210,9 +212,14 @@ def find_vertical_edges(centroids, image, listint):
                     top = -changer
                     spacing = (top, bottom)
                     is_hit = True
+                    #image = cv2.circle(image, (point[0], point[1] + changer), 1, (255, 0, 255))
                     changer = 0
 
             # Add the top and bottom
+            #cv2.destroyAllWindows()
+
+            #cv2.imshow("test", image)
+            #cv2.waitKey(0)
             line_points_to_add.append(spacing[:])
             intcount += 1
         dna_edges.append(line_points_to_add[:])

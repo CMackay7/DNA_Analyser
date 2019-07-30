@@ -1,0 +1,85 @@
+DNA damage breakdown for lane 0
+open circular: 47.0%
+linear: 1.54%
+supercoiled: 51.46%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 1
+open circular: 45.23%
+linear: 1.36%
+supercoiled: 53.4%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 2
+open circular: 53.15%
+linear: 2.55%
+supercoiled: 44.3%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 3
+open circular: 58.98%
+linear: 3.05%
+supercoiled: 37.97%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 4
+open circular: 65.24%
+linear: 3.19%
+supercoiled: 31.57%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 5
+open circular: 35.2%
+linear: 1.38%
+supercoiled: 63.42%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 6
+open circular: 46.0%
+linear: 2.48%
+supercoiled: 51.52%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 7
+open circular: 48.51%
+linear: 1.76%
+supercoiled: 49.73%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 8
+open circular: 48.26%
+linear: 2.17%
+supercoiled: 49.57%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 9
+open circular: 59.66%
+linear: 3.63%
+supercoiled: 36.71%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 10
+open circular: 69.27%
+linear: 3.91%
+supercoiled: 26.82%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 11
+open circular: 34.97%
+linear: 0.31%
+supercoiled: 64.73%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 12
+open circular: 45.53%
+linear: 1.46%
+supercoiled: 53.01%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 13
+open circular: 49.34%
+linear: 2.02%
+supercoiled: 48.64%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 14
+open circular: 54.67%
+linear: 2.78%
+supercoiled: 42.55%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 15
+open circular: 56.77%
+linear: 6.77%
+supercoiled: 36.46%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+DNA damage breakdown for lane 16
+open circular: 73.34%
+linear: 4.96%
+supercoiled: 21.7%
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
