@@ -12,7 +12,7 @@ from numpy import trapz
 def some_testing(data):
     splits, datas = split_into_sections(data)
     simple_graphing(data, splits)
-    get_areas(datas)
+    caller_function(datas)
 
 
     # split_into_sections takes the data and will call go_along_data in GraphAnalysis and will find the first middle
@@ -78,6 +78,13 @@ def simple_graphing(data, centroidedges):
         # Uncomment this so show graphs
 
 
+def caller_function(datas):
+    import FileWriter
+    areas = get_areas(datas)
+    maxes = get_maxes(datas)
+    FileWriter.write_to_file(areas, maxes)
+
+
 def get_areas(datas):
     areas = []
     for data in datas:
@@ -89,11 +96,11 @@ def get_areas(datas):
         areas.append(toadd[:])
         toadd.clear()
 
-    normalise_values(areas)
+    return normalise_values(areas)
 
 
 def normalise_values(data):
-    import FileWriter
+
     normalised_values = []
     for values in data:
         toadd = []
@@ -104,4 +111,16 @@ def normalise_values(data):
         normalised_values.append(toadd[:])
         toadd.clear()
 
-    FileWriter.write_to_file(normalised_values)
+    return normalised_values
+    # FileWriter.write_to_file(normalised_values)
+
+
+def get_maxes(datas):
+    maxes = []
+    for data in datas:
+        toadd = []
+        for section in data:
+            toadd.append(max(section))
+        maxes.append(toadd[:])
+        toadd.clear()
+    return normalise_values(maxes)

@@ -4,14 +4,21 @@ from tkinter.filedialog import asksaveasfilename
 # This file just saves the file with the data in
 
 
-def write_to_file(lines):
-    whattowrite = construct_file(lines)
+def write_to_file(areas, maxes):
+    whattowriteareas = construct_file(areas)
+    whattowritemaxes = construct_file(maxes)
     filepath = asksaveasfilename()
-    completefile = filepath + ".txt"
-    filetowrite = open(completefile, "w+")
+    completefileareas = filepath + "areas.txt"
+    completefilemaxes = filepath + "maxes.txt"
+    filetowriteareas = open(completefileareas, "w+")
 
-    for line in whattowrite:
-        filetowrite.write(line)
+    for line in whattowriteareas:
+        filetowriteareas.write(line)
+
+    filetowritemaxes = open(completefilemaxes, "w+")
+
+    for line in whattowritemaxes:
+        filetowritemaxes.write(line)
 
 
 def construct_file(lines):
