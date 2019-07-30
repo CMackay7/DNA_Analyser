@@ -4,10 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8040aa55-7530-4ed7-96fa-014d2730a028" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/DataAnalyser.py" beforeDir="false" afterPath="$PROJECT_DIR$/DataAnalyser.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FileWriter.py" beforeDir="false" afterPath="$PROJECT_DIR$/FileWriter.py" afterDir="false" />
-    </list>
+    <list default="true" id="8040aa55-7530-4ed7-96fa-014d2730a028" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ImageAnalyser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="-1031">
+              <caret line="162" column="31" lean-forward="true" selection-start-line="162" selection-start-column="31" selection-end-line="162" selection-end-column="31" />
               <folding>
                 <element signature="e#151#170#0" expanded="true" />
                 <marker date="1564498251680" expanded="true" signature="9400:9401" ph="..." />
@@ -115,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileWriter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+            <state relative-caret-position="391">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -136,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataAnalyser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1137">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="136">
+              <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <marker date="1564499197595" expanded="true" signature="2364:2468" ph="..." />
@@ -153,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Edditor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="45" selection-start-column="45" selection-end-column="45" />
+            <state relative-caret-position="323">
+              <caret line="19" column="112" lean-forward="true" selection-start-line="19" selection-start-column="112" selection-end-line="19" selection-end-column="112" />
               <folding>
                 <marker date="1564148896000" expanded="true" signature="1433:1438" ph="..." />
               </folding>
@@ -700,16 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Edditor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45" selection-start-column="45" selection-end-column="45" />
-          <folding>
-            <marker date="1564148896000" expanded="true" signature="1433:1438" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ClickHandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -753,10 +740,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FileWriter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ImageAnalyser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="-1031">
+          <caret line="162" column="31" lean-forward="true" selection-start-line="162" selection-start-column="31" selection-end-line="162" selection-end-column="31" />
           <folding>
             <element signature="e#151#170#0" expanded="true" />
             <marker date="1564498251680" expanded="true" signature="9400:9401" ph="..." />
@@ -764,22 +758,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Edditor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="112" lean-forward="true" selection-start-line="19" selection-start-column="112" selection-end-line="19" selection-end-column="112" />
+          <folding>
+            <marker date="1564148896000" expanded="true" signature="1433:1438" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DataAnalyser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1137">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="136">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
             <marker date="1564499197595" expanded="true" signature="2364:2468" ph="..." />
             <marker date="1564499197595" expanded="true" signature="3223:3228" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FileWriter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
         </state>
       </provider>
     </entry>
