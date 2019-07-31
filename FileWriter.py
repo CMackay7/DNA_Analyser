@@ -1,13 +1,17 @@
 # from tkinter import *
 from tkinter.filedialog import asksaveasfilename
-
+from tkinter import messagebox
+import tkinter as tk
 # This file just saves the file with the data in
 
 
-def write_to_file(areas, maxes):
+def get_file():
+    filepath = asksaveasfilename()
+    return filepath
+
+def write_to_file(areas, maxes, filepath):
     whattowriteareas = construct_file(areas)
     whattowritemaxes = construct_file(maxes)
-    filepath = asksaveasfilename()
     completefileareas = filepath + "areas.txt"
     completefilemaxes = filepath + "maxes.txt"
     filetowriteareas = open(completefileareas, "w+")

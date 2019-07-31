@@ -1,13 +1,14 @@
 import UserInputHandler
 import cv2
 import ImageAnalyser
-
+from tkinter import messagebox
 
 # This function will probably get changes to make it more more precise
 # Currently reads in an image crops it then turns it into a binary image in order to find the contours
+
+
 def curr_main():
     while True:
-
         BaseImageDirec = UserInputHandler.select_image()
         # Need to read load in multiple copies of the same image, some of the operations done on images need to be done
         # on gray scale images some need to be in colour so need to read the same image in multiple ways
@@ -56,23 +57,21 @@ def curr_main():
         # Find lanes and display on image
         grouped_centroids = find_lanes(final_centers, grey_image)
         lined_image = draw_lanes(grouped_centroids, grey_image.copy())
-        cv2.imshow('lineimage', lined_image)
-        key = cv2.waitKey(0)
-
+        ended = False
+        while not ended:
+            cv2.imshow('lineimage', lined_image)
+            key = cv2.waitKey(0)
+            final_centroids = grouped_centroids
+            if key == ord('d'):
+                final_centroids = UserInputHandler.delete_lanes(final_centroids, grey_image.copy())
+            elif key == ord('a'):
+                final_centroids = UserInputHandler.add_points_for_line(final_centroids, grey_image.copy())
+            elif key == ord('q'):
+                ended = True
+            lined_image = draw_lanes(final_centroids, grey_image.copy())
         # Let the user edit the lines on the image
-        final_centroids = grouped_centroids
-        if key == ord('e'):
-            final_centroids = UserInputHandler.delete_lanes(grouped_centroids, grey_image.copy())
 
         # cv2.destroyAllWindows()
-        lined_image = draw_lanes(final_centroids, grey_image.copy())
-        cv2.imshow('addLines', (lined_image))
-
-        # Allow them to press "e" if they want to add lines
-        key = cv2.waitKey(0)
-        if key == ord("e"):
-            final_centroids = UserInputHandler.add_points_for_line(grouped_centroids, grey_image.copy())
-        # final_centroids = Edditor.let_them_edit(grouped_centroids, foruseing)
 
         ImageAnalyser.get_intensity(standard_image, final_centroids)
 

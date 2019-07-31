@@ -15,9 +15,7 @@ def get_intensity(image, centroids):
     spacings = max_spacing_lines(dna_height_data)
     centroids = extend_points(centroids, image, spacings)
 
-    ImageManipulation.draw_lanes(centroids, image.copy())
-    cv2.imshow('testimage', ImageManipulation.draw_lanes(centroids, image.copy()))
-    cv2.waitKey(0)
+
     single_row_intensities = []
     all_intensities = []
 
@@ -48,7 +46,17 @@ def get_intensity(image, centroids):
         single_row_intensities.clear()
     tosend = decrease_values(all_intensities)
     cv2.destroyAllWindows()
-    DataAnalyser.some_testing(tosend)
+    showresults = False
+    ImageManipulation.draw_lanes(centroids, image.copy())
+    while not showresults:
+        cv2.imshow('testimage', ImageManipulation.draw_lanes(centroids, image.copy()))
+        key = cv2.waitKey(0)
+        if key == ord("g") or key == ord("q"):
+            showresults = True
+            cv2.destroyAllWindows()
+            DataAnalyser.some_testing(tosend, key)
+        else:
+            print()
 
 
 # Sorts centroids

@@ -89,7 +89,7 @@ def delete_lanes(centroid_group, image):
         clicked_pos = get_click.get()
         return_centroids = Edditor.find_and_delete_lanes(centroid_group, clicked_pos)
         edited_image = ImageManipulation.draw_lanes(return_centroids, image.copy())
-        cv2.destroyAllWindows()
+        #cv2.destroyAllWindows()
         cv2.imshow('lineimage', edited_image)
 
 
@@ -111,7 +111,7 @@ def delete_points(centroids, image):
         clicked_pos = get_click.get()
         returned_centroids = Edditor.find_and_delete_centroids(centroids, clicked_pos)
         edited_image = ImageManipulation.draw_centroids(returned_centroids, image.copy())
-        cv2.destroyAllWindows()
+        #cv2.destroyAllWindows()
         cv2.imshow("centroids_plotted", edited_image)
 
 
@@ -122,7 +122,7 @@ def add_points_for_line(centroids, image):
     clone = image.copy()
     while True:
         get_click = ClickHandler.ClickHandler()
-        cv2.setMouseCallback('addLines', get_click.click_and_crop)
+        cv2.setMouseCallback('lineimage', get_click.click_and_crop)
         stay_in_loop = True
         while stay_in_loop:
             key = cv2.waitKey(1)
@@ -137,8 +137,8 @@ def add_points_for_line(centroids, image):
         point1, point2 = check_drawn_lines(point1, point2)
         centroids = Edditor.add_line(centroids, point1, point2)
         image = ImageManipulation.draw_lanes(centroids, clone.copy())
-        cv2.destroyAllWindows()
-        cv2.imshow('addLines', image)
+        #qcv2.destroyAllWindows()
+        cv2.imshow('lineimage', image)
 
 
 # Was getting errors if they didn't draw the crop section from left to right

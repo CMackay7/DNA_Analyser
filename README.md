@@ -26,19 +26,19 @@ HOW TO USE
     - Also if there is one circle on its own it will crash please remove this (the line can get added in later)
     - press "q" to exit edit
   
-5. The lines drawn on the image will then be displayed 
-    - press "e" and double click a line if it needs to be removed
-    - press "q" to exit edit
+5. The lines drawn on the image will then be displayed
+    
+    - Now you will be in the edit stage you can press "d" to enter delete mode or "a" to enter add mode.
+    - If you are in delete mode, double click a line and it will be removed.
+    - If you are in add mode click and drag to draw a point between two dna points
+    - If you are in either delete or add mode press "q" to go back to edit mode (e.g. if you need to switch between add and delete you have to press "q" first).
+    - If you are in the base edit mode and you are happy with the lines press "q" to continue.
   
-6. The lines will be shown again
-
-    - Press "e" to raw new lines on the image
-
-    - click hold and draw in order to draw new lines between the dna points (please draw from first to last with one line)
   
-    - press "q" to exit
-  
-7. The image will be displayed again press any key to continue
+7. The image will be displayed again 
+    
+    - Press "q" to run the analysis and just save the data to a textfile
+    - Press "g" if you want the data to be saved in a textfile and the data to be graphed for each lane
 
 8. Type the what you want the file to be called
 
