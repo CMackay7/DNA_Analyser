@@ -16,7 +16,7 @@ import sys
 
 def select_image():
 
-    filename = askopenfilename()
+    filename = askopenfilename(title="Select image for analysis")
     if filename == '':
         sys.exit(0)
     return filename
@@ -39,18 +39,15 @@ def crop_image(image_copy):
             key = cv2.waitKey(1)
             if cropper.size() > 2:
                 cropper.clear()
-            if (cropper.size() == 2) or (key == ord("q")):
+            if cropper.size() == 2:
                 stay_in_loop = False
-
-        if key == ord("q"):
-            break
 
         point1 = cropper.get()
         point2 = cropper.get()
         point1, point2 = check_crop_points(point1, point2)
 
         # Display the area the user has chosen to crop to see if they are alright with this
-        imagetouse = image_to_edit #ImageManipulation.add_borders(image_to_edit)
+        imagetouse = image_to_edit
         cv2.rectangle(imagetouse, point1, point2, (0, 255, 0), 2)
         cv2.imshow("image_to_crop", imagetouse)
 
@@ -65,7 +62,7 @@ def crop_image(image_copy):
                 stay_in_loop = False
 
             # If they are happy crop the image
-            elif key == ord("y") or key == ord("Y"):
+            elif key == ord("q") or key == ord("Q"):
                 cv2.destroyAllWindows()
                 return point1, point2
 
@@ -80,16 +77,15 @@ def delete_lanes(centroid_group, image):
         stay_in_loop = True
         while stay_in_loop:
             key = cv2.waitKey(1)
-            if (get_click.size() == 1) or (key == ord("q")):
+            if (get_click.size() == 1) or (key == ord("e")):
                 stay_in_loop = False
 
-        if key == ord("q"):
+        if key == ord("e"):
             return centroid_group
 
         clicked_pos = get_click.get()
         return_centroids = Edditor.find_and_delete_lanes(centroid_group, clicked_pos)
         edited_image = ImageManipulation.draw_lanes(return_centroids, image.copy())
-        #cv2.destroyAllWindows()
         cv2.imshow('lineimage', edited_image)
 
 
@@ -111,7 +107,6 @@ def delete_points(centroids, image):
         clicked_pos = get_click.get()
         returned_centroids = Edditor.find_and_delete_centroids(centroids, clicked_pos)
         edited_image = ImageManipulation.draw_centroids(returned_centroids, image.copy())
-        #cv2.destroyAllWindows()
         cv2.imshow("centroids_plotted", edited_image)
 
 
@@ -126,10 +121,10 @@ def add_points_for_line(centroids, image):
         stay_in_loop = True
         while stay_in_loop:
             key = cv2.waitKey(1)
-            if get_click.size() == 2 or key == ord('q'):
+            if get_click.size() == 2 or key == ord('e'):
                 stay_in_loop = False
 
-        if key == ord("q"):
+        if key == ord("e"):
             return centroids
 
         point1 = get_click.get()
@@ -137,7 +132,6 @@ def add_points_for_line(centroids, image):
         point1, point2 = check_drawn_lines(point1, point2)
         centroids = Edditor.add_line(centroids, point1, point2)
         image = ImageManipulation.draw_lanes(centroids, clone.copy())
-        #qcv2.destroyAllWindows()
         cv2.imshow('lineimage', image)
 
 

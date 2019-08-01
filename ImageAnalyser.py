@@ -54,9 +54,7 @@ def get_intensity(image, centroids):
         if key == ord("g") or key == ord("q"):
             showresults = True
             cv2.destroyAllWindows()
-            DataAnalyser.some_testing(tosend, key)
-        else:
-            print()
+            DataAnalyser.analyse(tosend, key)
 
 
 # Sorts centroids
@@ -205,7 +203,6 @@ def find_vertical_edges(centroids, image, listint):
                 if intent < (currintent - currintent * 0.15):
                     bottom = changer
                     is_hit = True
-                    #image = cv2.circle(image, (point[0], point[1] - changer), 1, (255, 0, 255))
 
                     changer = 0
 
@@ -220,14 +217,9 @@ def find_vertical_edges(centroids, image, listint):
                     top = -changer
                     spacing = (top, bottom)
                     is_hit = True
-                    #image = cv2.circle(image, (point[0], point[1] + changer), 1, (255, 0, 255))
                     changer = 0
 
             # Add the top and bottom
-            #cv2.destroyAllWindows()
-
-            #cv2.imshow("test", image)
-            #cv2.waitKey(0)
             line_points_to_add.append(spacing[:])
             intcount += 1
         dna_edges.append(line_points_to_add[:])

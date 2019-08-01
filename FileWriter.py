@@ -1,13 +1,12 @@
 # from tkinter import *
 from tkinter.filedialog import asksaveasfilename
-from tkinter import messagebox
-import tkinter as tk
 # This file just saves the file with the data in
 
 
 def get_file():
-    filepath = asksaveasfilename()
+    filepath = asksaveasfilename(title="Select save area")
     return filepath
+
 
 def write_to_file(areas, maxes, filepath):
     whattowriteareas = construct_file(areas)

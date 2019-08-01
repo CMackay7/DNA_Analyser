@@ -9,7 +9,7 @@ from numpy import trapz
 import os
 
 
-def some_testing(data, key):
+def analyse(data, key):
     filepath = FileWriter.get_file()
     splits, datas = split_into_sections(data)
     if key == ord("g"):
@@ -39,7 +39,6 @@ def split_into_sections(data):
             toadd.append(point)
         final.append(toadd[:])
         toadd.clear()
-    print()
     returnsections = []
     passback = []
 
@@ -88,6 +87,7 @@ def caller_function(datas, filepath):
     areas = get_areas(datas)
     maxes = get_maxes(datas)
     FileWriter.write_to_file(areas, maxes, filepath)
+
 
 def get_areas(datas):
     areas = []

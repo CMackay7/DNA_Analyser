@@ -136,7 +136,7 @@ def find_centroids(image):
 def add_borders(image):
     top, bottom, left, right = 0, 0, 40, 40
     bordered = cv2.copyMakeBorder(image, top, bottom, left, right, cv2.BORDER_CONSTANT,
-                                  value=[128,128,128])
+                                  value=[128, 128, 128])
     return bordered
 
 
