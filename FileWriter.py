@@ -16,25 +16,21 @@ def write_to_file(areas, maxes, filepath):
     filetowriteareas = open(completefileareas, "w+")
 
     for line in whattowriteareas:
-        filetowriteareas.write(line)
+        filetowriteareas.writelines(line)
 
     filetowritemaxes = open(completefilemaxes, "w+")
 
     for line in whattowritemaxes:
-        filetowritemaxes.write(line)
+        filetowritemaxes.writelines(line)
 
 
 def construct_file(lines):
     onelane = []
-    breaknames = ["open circular", "linear", "supercoiled"]
-
+    firstlane = "LANE    OC       L       SC\n"
+    #           "1      33   32    34"
+    onelane.append(firstlane)
     # Construct file
     for i in range(len(lines)):
-
-        onelane.append("DNA damage breakdown for lane " + str(i) + "\n")
-        for x in range(3):
-            onelane.append(breaknames[x] + ": " + str(lines[i][x]) + "%" + "\n")
-
-        onelane.append("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + "\n")
+        onelane.append(str(i) + "      " + str(lines[i][0]) + "    " + str(lines[i][1]) + "    " + str(lines[i][2]) + "\n")
 
     return onelane
