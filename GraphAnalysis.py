@@ -47,6 +47,6 @@ def decrease(original, new):
 def get_background_signal(data):
     sorted_data = sorted(data, reverse=True)
     length = len(sorted_data)
-    last_5 = sorted_data[-10:]
+    last_5 = sorted_data[-round(length - length * 0.80):]
     avg = statistics.mean(last_5)
     return avg

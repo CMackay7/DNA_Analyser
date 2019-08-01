@@ -26,13 +26,13 @@ def get_intensity(image, centroids):
         y = point[0][1]
 
         counter = 0
-        for i in range(start, end):
+        for x in range(start, end):
             addintensity = 0
             points = spacings[counter]
             for yedit in range(points[0], points[1]):
                 # The intensity of the image is calculated by taking the values for red blue and green and summing the
                 # values.
-                r, b, g = image[y, i]
+                r, b, g = image[y, x]
                 r = int(r)
                 b = int(b)
                 g = int(g)
@@ -77,14 +77,14 @@ def extend_points(centroids, image, spacing):
 
         cent = sort_cent(cent)
         cent_len = len(cent)
-        for i in range(cent_len):
+        for current_centroid in range(cent_len):
             top = spacing[counter][0]
             bottom = spacing[counter][1]
-            x = cent[i][0]
-            y = cent[i][1]
+            x = cent[current_centroid][0]
+            y = cent[current_centroid][1]
             background = backgrounds[counter]
             # If first point go here
-            if i == 0:
+            if current_centroid == 0:
                 end_hit = False
                 changer = 1
                 while not end_hit:
@@ -99,7 +99,7 @@ def extend_points(centroids, image, spacing):
                         changer = changer + 1
                 edited_point = (x - changer, cent[0][1])
                 # If it is the final point go here
-            elif i == cent_len - 1:
+            elif current_centroid == cent_len - 1:
                 end_hit = False
                 changer = 1
                 while not end_hit:
@@ -108,15 +108,15 @@ def extend_points(centroids, image, spacing):
                         r, b, g = image[y + changey, x + changer]
                         intent = pixel_intent(r, g, b)
                         totalint += intent
-                    if totalint <= background or cent[i][0] + changer == width - 1:
+                    if totalint <= background or cent[current_centroid][0] + changer == width - 1:
                         end_hit = True
                     else:
                         changer = changer + 1
-                edited_point = (cent[i][0] + changer, cent[i][1])
+                edited_point = (cent[current_centroid][0] + changer, cent[current_centroid][1])
                 # If it is neither it means the point is in the middle of the line, therefore it doesnt need changing
                 # so just copy it over
             else:
-                edited_point = cent[i]
+                edited_point = cent[current_centroid]
             to_add.append(edited_point)
         counter += 1
         to_be_added_to.append(to_add[:])
