@@ -15,7 +15,6 @@ def get_intensity(image, centroids):
     spacings = max_spacing_lines(dna_height_data)
     centroids = extend_points(centroids, image, spacings)
 
-
     single_row_intensities = []
     all_intensities = []
 

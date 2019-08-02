@@ -6,13 +6,13 @@
 # centroids and the position of the users click it will search and delete
 def find_and_delete_lanes(centroids, click_pos):
     has_line_been_hit = True
-    loop_length = len(centroids)
+    number_of_centroids = len(centroids)
 
-    for i in range(loop_length):
-        for curr_point in centroids[i]:
+    for curr_centroid in range(number_of_centroids):
+        for curr_point in centroids[curr_centroid]:
             # The reason it adds and takes 2 away is so there is a margin of error in the users click
             if (click_pos[1] + 2) > curr_point[1] > (click_pos[1] - 2) and has_line_been_hit:
-                del centroids[i]
+                del centroids[curr_centroid]
                 return centroids
     return centroids
 

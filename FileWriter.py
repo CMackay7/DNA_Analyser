@@ -1,4 +1,3 @@
-# from tkinter import *
 from tkinter.filedialog import asksaveasfilename
 # This file just saves the file with the data in
 
@@ -8,6 +7,7 @@ def get_file():
     return filepath
 
 
+# Write the results from each lane to file
 def write_to_file(areas, maxes, filepath):
     whattowriteareas = construct_file(areas)
     whattowritemaxes = construct_file(maxes)
@@ -27,7 +27,6 @@ def write_to_file(areas, maxes, filepath):
 def construct_file(lines):
     onelane = []
     firstlane = "LANE    OC       L       SC\n"
-    #           "1      33   32    34"
     onelane.append(firstlane)
     # Construct file
     for i in range(len(lines)):
