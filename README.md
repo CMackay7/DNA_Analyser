@@ -1,4 +1,3 @@
-I know the layout for this readme isn't great I am sorry
 
 
 Should work but will be changing some code in the near future.
